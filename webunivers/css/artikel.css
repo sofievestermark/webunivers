@@ -11,8 +11,10 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: var(--primary-color)
+    background-color: var(--primary-color);
+    font-family: "bely-display", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .header {
@@ -34,7 +36,7 @@ body {
 }
 
 .main-nav a {
-    color: var(--secundary-color)
+    color: var(--secundary-color);
     text-decoration: none;
 }
 
@@ -45,8 +47,20 @@ body {
     object-fit: cover; 
 }
 
+
+.banner h1 {
+    position: absolute;
+    top: 26%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--secundary-color); /* Adjust color for visibility */
+    text-align: center;
+    font-size: 2.5rem; /* Adjust as needed */
+    padding: 10px;
+    border-radius: 8px;
+}
+
 .logo {
-    position: absolute; 
     top: 10px; 
     right: 10px; 
 }
@@ -54,17 +68,80 @@ body {
 .logo img {
     width: 100px; 
     height: auto;
+    
 }
 
-.img{
-    width: 15%;
-    height: 10%;
-    margin: 5%;
-}
-
-.tekst{
+section.intro {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 2%;
+    padding-right: 2%;
     margin: 10px;
     line-height: 200%;
     word-wrap: break-word;
     max-width: 90%;
 }
+
+section.tekst {
+    padding-right: 2%;
+    padding-left: 2%;
+    margin: 10px;
+    line-height: 200%;
+    word-wrap: break-word;
+    max-width: 90%;
+}
+
+.billede{
+    width: 15%;
+    height: 10%;
+    margin: 5%;
+}
+
+
+
+.viskestykke {
+    width: 100%;
+    height: auto;
+    display: block; 
+    object-fit: cover; 
+}
+
+
+figure.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    align-items: center;
+    padding-top: 2%;
+}
+
+
+.intro {
+    margin-bottom: 20px;
+  }
+  
+  .intro p {
+    font-size: 1rem;
+    color: #333;
+    text-align: justify;
+  }
+  
+  .tekst {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .tekst article h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+
+  }
+  
+  .tekst article p {
+    font-size: 1rem;
+    color: #333;
+    text-align: justify;
+  }

@@ -1,122 +1,77 @@
-*{
+* {
     margin: 0;
     padding: 0;
-    font-family: tahoma;
-    font-size: 18px;
-  }
-  
-  :root{
-    --primary-font-family: 'bely display';
-    --primary-color: #F3E1AC;
-    --secundary-color: #420A17;
-    --tertiere-color:  #022923
-}
-
-body {
-    font-family: bely display;
-    margin: 0;
-    padding: 0;
-    background-color: var(--primary-color)
-}
-
-
-  header{
-    background-color: #F63232;
-    padding: 20px 0;
-    text-align: center;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: 1;
-  }
-
-  .banner{
-    position: relative;
-  }
-  .banner img{
-    max-width: 100%;
-  }
-
-  nav{
-    background: var(--primary-color);
-    padding: 20px;
-    position: -webkit-sticky;
-    position: sticky;
-    top: 106px;
-    z-index: 1;
-  }
-
-  nav ul{
-    white-space: nowrap;
-    max-width: 1200px;
-    margin: 0 auto;
-    text-align: center;
-  }
-  
-  nav li{
-    width: 25%;
-    display: inline-block;
-    font-size: 24px;
-  }
-  nav li a{
-    text-decoration: none;
-    color: #4B4B4B;
-  }
-  nav li a:hover{
-    text-decoration: underline;
-  }
-
-  main{
-    max-width: 100%;
-    width: 1200px;
-    margin: 80px auto;
-    padding: 0 40px;
-    -webkit-box-sizing: border-box;
     box-sizing: border-box;
   }
   
-  article h2{
-    font-size: 48px;
-    color: var(--secundary-color);
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+    padding: 20px;
   }
-
-  article p{
-    line-height: 2em;
-    color: #4B4B4B;
-  }
-
-  .images{
+  
+  header {
     text-align: center;
-    margin: 80px 0;
-    white-space: nowrap;
+    margin-bottom: 20px;
   }
-  .images li{
-    display: inline-block;
-    list-style-type: none;
-    width: 40%;
-    margin: 20px 5%;
-    position: relative;
+  
+  header h1 {
+    font-size: 2rem;
+    color: #333;
   }
-  .images li:hover{
-    top: -4px;
+  
+  header p {
+    font-size: 1.2rem;
+    color: #555;
   }
-  .images li img{
-    max-width: 100%;
+  
+  .intro {
+    margin-bottom: 20px;
   }
-  .images {
-    display: -webkit-box;
-    display: -ms-flexbox;
+  
+  .intro p {
+    font-size: 1rem;
+    color: #666;
+    text-align: justify;
+  }
+  
+  .content {
     display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 20px;
   }
-  .coverimage li {
-    -webkit-box-flex: 1;
-    -ms-flex: 0 0 50%;
-    flex: 0 0 50%;
-    margin: 5px;
-    height: 100px;
+  
+  .content article h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
   }
-
+  
+  .content article p {
+    font-size: 1rem;
+    color: #555;
+    text-align: justify;
+  }
+  
+  footer {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  footer h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  footer ul {
+    list-style-type: none;
+  }
+  
+  footer ul li {
+    font-size: 1rem;
+    color: #333;
+  }
+  
  
