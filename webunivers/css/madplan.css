@@ -11,7 +11,7 @@
 }
 
 body {
-    background-color: var(--primary-color)
+    background-color: var(--primary-color);
     font-family: "bely-display", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -49,11 +49,104 @@ body {
 
 .velkommen {
     position: absolute;
-    top: 50%; 
-    left: 20%; 
+    top: 25%; 
+    left: 50%; 
     transform: translate(-50%, -50%); 
     color: var(--primary-color) 
     font-size: 55px; 
     font-weight: bold;
     text-align: center;
+}
+
+.oversigt {
+    text-align:center
+}
+.oversigt h2 {
+    line-height: 200%;
+    color: var(--secundary-color);
+}
+
+
+.indkøbsliste {
+    padding-right: 2%;
+    padding-left: 15%;
+    margin: 10px;
+    line-height: 200%;
+    word-wrap: break-word;
+    max-width: 90%;
+    background-color: lightblue;
+    padding-bottom: 10%;
+    padding-top: 10%;
+}
+
+.blåboks{
+    padding-right: 60%;
+    padding-left: 5%;
+    margin: 10px;
+    line-height: 200%;
+    word-wrap: break-word;
+    max-width: 90%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    background-color: var(--primary-color);
+
+    position: absolute;
+    top: 700px; 
+    right: 300px; 
+    padding: 40px;
+    border-radius: 8px;
+    width: 400px; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.billeder{
+    width: 110%;
+    height: 93%;
+    margin: 5%;
+}
+
+.billede-sektion {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(200px, 1fr)); /* 3 columns */
+    gap: 20px;
+    padding: 20px;
+    padding-bottom: 10%;
+    max-width: 1000px; /* Control total width of grid */
+    margin: 0 auto; /* Center the grid on the page */
+    background-color: var(--secundary-color);
+    color:var(--primary-color);
+    
+}
+
+
+
+.sektion {
+    background-color: none;
+    padding: 15px;
+    text-align: center;
+    border: 1px /* Add a border for clarity */
+    
+}
+
+.viskestykke {
+    width: 100%;
+    height: auto;
+    display: block; 
+    object-fit: cover; 
 }

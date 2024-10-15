@@ -46,12 +46,12 @@ body {
 .banner img {
     width: 100%;
     height: auto;
-    display: block; 
+    display:block;
     object-fit: cover; 
-}
+} 
+
 
 .velkommen {
-    position: absolute;
     top: 40%; 
     left: 20%; 
     transform: translate(-50%, -50%); 

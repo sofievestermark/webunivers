@@ -1,77 +1,85 @@
+/* CSS Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
-  
-  body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f9f9f9;
-    color: #333;
-    padding: 20px;
-  }
-  
-  header {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
-  header h1 {
-    font-size: 2rem;
-    color: #333;
-  }
-  
-  header p {
-    font-size: 1.2rem;
-    color: #555;
-  }
-  
-  .intro {
-    margin-bottom: 20px;
-  }
-  
-  .intro p {
-    font-size: 1rem;
-    color: #666;
-    text-align: justify;
-  }
-  
-  .content {
+}
+
+:root {
+    --primary-color: #F3E1AC;
+    --text-color: #420A17;
+    --accent-color: #022923;
+    --font-family: 'Arial', sans-serif;
+}
+
+body {
+    font-family: var(--font-family);
+    background-color: var(--primary-color);
+    color: var(--text-color);
+}
+
+.header {
+    background-color: var(--primary-color);
     display: flex;
-    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.main-nav ul {
+    display: flex;
     gap: 20px;
-  }
-  
-  .content article h2 {
-    font-size: 1.5rem;
-    color: #333;
-    margin-bottom: 10px;
-  }
-  
-  .content article p {
-    font-size: 1rem;
-    color: #555;
-    text-align: justify;
-  }
-  
-  footer {
-    margin-top: 20px;
-    text-align: center;
-  }
-  
-  footer h3 {
+    list-style-type: none;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: bold;
+}
+
+.shopping-list, .recipes {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: var(--accent-color);
+}
+
+.categories {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.category h3 {
+    color: var(--accent-color);
     font-size: 1.2rem;
     margin-bottom: 10px;
-  }
-  
-  footer ul {
+}
+
+.category ul {
+    list-style: none;
+    margin-left: 15px;
+}
+
+.category ul li {
+    margin-bottom: 5px;
+}
+
+.recipes ul {
     list-style-type: none;
-  }
-  
-  footer ul li {
-    font-size: 1rem;
-    color: #333;
-  }
-  
- 
+    margin-top: 10px;
+}
+
+.recipes ul li {
+    margin-bottom: 10px;
+    color: var(--text-color);
+}
