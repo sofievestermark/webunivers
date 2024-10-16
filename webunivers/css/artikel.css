@@ -7,7 +7,7 @@
     --primary-font-family: 'bely display';
     --primary-color: #F3E1AC;
     --secundary-color: #420A17;
-    --tertiere-color:  #022923
+    --tertiere-color:  #003317;
 }
 
 body {
@@ -50,13 +50,24 @@ body {
 
 .banner h1 {
     position: absolute;
-    top: 26%;
+    top: 24%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: var(--secundary-color); /* Adjust color for visibility */
     text-align: center;
     font-size: 2.5rem; /* Adjust as needed */
     padding: 10px;
+    border-radius: 8px;
+}
+.banner h2 {
+    position: absolute;
+    top: 33%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--secundary-color); /* Adjust color for visibility */
+    text-align: center;
+    font-size: 1.7rem; /* Adjust as needed */
+    padding: 5px;
     border-radius: 8px;
 }
 
@@ -71,6 +82,14 @@ body {
     
 }
 
+
+.intro p {
+    font-size: 1rem;
+    color: #333;
+    text-align: justify;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+
 section.intro {
     padding-top: 5%;
     padding-bottom: 5%;
@@ -82,6 +101,23 @@ section.intro {
     max-width: 90%;
 }
 
+.row{
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+figure.row {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center align items horizontally */
+    padding-top: 2%;
+}
+
+article p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
 section.tekst {
     padding-right: 2%;
     padding-left: 2%;
@@ -90,6 +126,7 @@ section.tekst {
     word-wrap: break-word;
     max-width: 90%;
 }
+
 
 .billede{
     width: 30%;
@@ -117,15 +154,6 @@ figure.row {
 }
 
 
-/* .intro {
-    margin-bottom: 20px;
-  } */
-  
-  .intro p {
-    font-size: 1rem;
-    color: #333;
-    text-align: justify;
-  }
   
   .tekst {
     display: flex;
@@ -153,6 +181,17 @@ figure.row {
     line-height: 200%;
     word-wrap: break-word;
     max-width: 90%;
+    padding-bottom: 5%;
   }
 
+
+
+.bunden a {
+    text-decoration: none; 
+    color: inherit;
+}
+
+.bunden a:hover {
+    color: rgb(9, 100, 185); /* Add a custom hover color */
+}
  

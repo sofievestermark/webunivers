@@ -7,7 +7,7 @@
     --primary-font-family: 'bely display';
     --primary-color: #F3E1AC;
     --secundary-color: #420A17;
-    --tertiere-color:  #022923
+    --tertiere-color:  #003317;
 }
 
 body {
@@ -37,7 +37,6 @@ body {
 
 .main-nav a {
     color: var(--secundary-color)
-    text-decoration: none;
 }
 
 .banner img {
@@ -52,7 +51,7 @@ body {
     top: 25%; 
     left: 50%; 
     transform: translate(-50%, -50%); 
-    color: var(--primary-color) 
+    color: var(--secundary-color); 
     font-size: 55px; 
     font-weight: bold;
     text-align: center;
@@ -63,23 +62,41 @@ body {
 }
 .oversigt h2 {
     line-height: 200%;
-    color: var(--secundary-color);
+    color: var(--tertiere-color);
+    padding: 7%;
 }
 
+.oversigt a {
+    text-decoration: none; 
+    color: inherit;
+}
 
-.indkøbsliste {
+.oversigt a:hover {
+    color: rgb(9, 100, 185); /* Add a custom hover color */
+}
+
+.indkoebsliste {
     padding-right: 2%;
     padding-left: 15%;
     margin: 10px;
     line-height: 200%;
     word-wrap: break-word;
-    max-width: 90%;
+    max-width: 100%;
     background-color: lightblue;
     padding-bottom: 10%;
     padding-top: 10%;
 }
 
-.blåboks{
+.indkoebsliste label {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.indkoebsliste h2 {
+    color: var(--secundary-color);
+}
+
+
+.gulboks{
     padding-right: 60%;
     padding-left: 5%;
     margin: 10px;
@@ -91,57 +108,78 @@ body {
     background-color: var(--primary-color);
 
     position: absolute;
-    top: 700px; 
-    right: 300px; 
+    top: 870px; 
+    right: 200px; 
     padding: 40px;
     border-radius: 8px;
     width: 400px; 
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.gulboks p {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
 
 
 
 .billeder{
-    width: 110%;
-    height: 93%;
+    width: 100%;
+    height: auto;
     margin: 5%;
 }
 
-.billede-sektion {
+/* .billede-sektion {
     display: grid;
-    grid-template-columns: repeat(3, minmax(200px, 1fr)); /* 3 columns */
+    grid-template-columns: repeat(3, minmax(200px, 1fr)); 
     gap: 20px;
     padding: 20px;
     padding-bottom: 10%;
-    max-width: 1000px; /* Control total width of grid */
-    margin: 0 auto; /* Center the grid on the page */
+    max-width: 1000px; 
+    margin: 0 auto; 
     background-color: var(--secundary-color);
+    color:var(--primary-color);
+    
+} */
+
+/* Wrapper for full-width background */
+.billede-wrapper {
+    background-color: var(--secundary-color);
+    width: 100%; /* Full page width for the background */
+    padding: 20px 0; /* Add padding if desired */
+    padding-top: 10%;
+}
+
+/* Centered grid with max-width */
+.billede-sektion {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(200px, 1fr)); 
+    gap: 20px;
+    padding: 20px;
+    padding-bottom: 10%;
+    max-width: 1000px; 
+    margin: 0 auto; 
     color:var(--primary-color);
     
 }
 
 
-
 .sektion {
-    background-color: none;
     padding: 15px;
     text-align: center;
     border: 1px /* Add a border for clarity */
     
+}
+
+.billeder:hover {
+    opacity: 0.8; /* Dim the image slightly */
+}
+
+.billede-sektion a {
+    text-decoration: none; 
+    color: inherit;
+}
+
+.billede-sektion a:hover h3 {
+    color: rgb(9, 100, 185); /* Add a custom hover color */
 }
 
 .viskestykke {
