@@ -59,6 +59,7 @@ body {
     padding: 10px;
     border-radius: 8px;
 }
+
 .banner h2 {
     position: absolute;
     top: 33%;
@@ -101,18 +102,49 @@ section.intro {
     max-width: 90%;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .row{
     margin: 0;
     padding: 0;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-figure.row {
+section.tekskmbillede
+{
+    display: flex;
+    flex-direction: row;
+    padding-top: 5%;
+}
+
+article.row {
     display: flex;
     flex-direction: column; /* Stack items vertically */
-    align-items: center; /* Center align items horizontally */
+    align-items: end; /* Center align items horizontally */
     padding-top: 2%;
 }
+
+article.column {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items:start; /* Center align items horizontally */
+    padding-top: 2%; 
+    width: 400%;
+}
+
 
 article p{
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -129,8 +161,8 @@ section.tekst {
 
 
 .billede{
-    width: 30%;
-    height: 20%;
+    width: 55%;
+    height: 70%;
     margin: 5%;
 }
 
@@ -144,35 +176,6 @@ section.tekst {
 }
 
 
-figure.row {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-content: center;
-    align-items: center;
-    padding-top: 2%;
-}
-
-
-  
-  .tekst {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-  }
-  
-  .tekst article h2 {
-    font-size: 1.5rem;
-    color: #333;
-    margin-bottom: 0px;
-  }
-  
-  .tekst article p {
-    font-size: 1rem;
-    color: #333;
-    text-align: justify;
-    margin-bottom: 0;
-  }
 
   article.bunden {
     padding-right: 2%;
