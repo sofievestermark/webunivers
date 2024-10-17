@@ -1,85 +1,267 @@
-/* CSS Reset */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Root Variables */
 :root {
-    --primary-color: #F3E1AC;
-    --text-color: #420A17;
-    --accent-color: #022923;
-    --font-family: 'Arial', sans-serif;
+    --primary-color: #F2E1AC;
+    --secondary-color: #420A17;
+    --tertiary-color: #022923;
 }
 
+/* Body and Header */
 body {
-    font-family: var(--font-family);
-    background-color: var(--primary-color);
-    color: var(--text-color);
+    background-color: #F3E1AC;
+    font-family: "bely-display", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
-.header {
-    background-color: var(--primary-color);
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: var(--primary-color);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    padding: 10px 7%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px;
+    z-index: 1000;
 }
 
-.main-nav ul {
+
+
+
+
+
+header.logo {
+    font-weight: bolder;
+    font-size: 25px;
+    color: #333;
+    }
+
+    .logo img {
+        cursor: pointer;
+        height: 50px; /* Adjust height as needed */
+    }
+
+/* Main Navigation */
+.navbar {
     display: flex;
     gap: 20px;
-    list-style-type: none;
+    margin-left: auto; /* Pushes navbar to the right */
+    list-style: none;
+}
+
+.navbar > li {
+    position: relative;
+}
+
+/* Links */
+.navbar a {
+    color: var(--secondary-color); /* Ensure this contrasts with your background */
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+}
+.main-nav {
+    display: flex; /* Make navigation a flex container */
+    width: 100%;
+    align-items: center;
+}
+
+/* Dropdown Menu */
+.dropdown {
+    display: none; /* Hidden by default */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: var(--secondary-color);
+    min-width: 150px;
+    list-style: none;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+    z-index: 1000;
+}
+
+.dropdown li {
+    padding: 10px;
+}
+
+.dropdown li a {
+    color:var(--primary-color);
+    padding: 10px;
+}
+
+/* Show dropdown on hover */
+.navbar > li:hover > .dropdown {
+    display: block;
+}
+
+/* Styling Nested Dropdown */
+.dropdown .dropdown {
+    left: 100%;
+    top: 0;
+    margin-left: 10px;
 }
 
 .main-nav a {
+    color: var(--secondary-color);
     text-decoration: none;
-    color: var(--text-color);
+    
+}
+
+
+
+
+
+
+
+.velkommen {
+    top: 65%; 
+    left: 30%; 
+    transform: translate(-50%, -50%); 
+    color: var(--primary-color);
+    font-size: 65px; 
     font-weight: bold;
+    text-align: center;
 }
-
-.shopping-list, .recipes {
-    padding: 20px;
-    margin: 20px auto;
-    max-width: 600px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-h2 {
-    font-size: 1.8rem;
-    margin-bottom: 15px;
-    color: var(--accent-color);
-}
-
-.categories {
+ 
+/*baggrundsbilleder, der fylder hele bredden på mit site.*/
+.banner {
+    background-image: url("../img/bannerudentekst.png"); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    width: 100vw;
+    height: 500px; 
     display: flex;
-    gap: 15px;
-    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    position: relative; 
 }
 
-.category h3 {
-    color: var(--accent-color);
-    font-size: 1.2rem;
+
+.inspiration {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 25px;
+    color: #022923;
+    padding-top: 10%;
+}
+
+.billeder{
+    width: 110%;
+    height: 93%;
+    margin: 5%;
+}
+
+.billeder:hover {
+    opacity: 0.8; 
+}
+
+/*fjerner underline og lilla farve på mine links*/
+.billede-sektion a {
+    text-decoration: none; 
+    color: inherit;
+}
+
+.billede-sektion a:hover h3 {
+    color: rgb(9, 100, 185); 
+}
+
+
+/*opsætningen af mine billeder i grid*/
+.billede-sektion {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(200px, 1fr)); 
+    gap: 20px;
+    padding: 20px;
+    padding-bottom: 20%;
+    max-width: 1000px; 
+    margin: 0 auto; 
+}
+
+.sektion {
+    padding: 15px;
+    text-align: center;
+    border: 1px; 
+}
+
+.bunden img {
+     width: 100%; 
+    height: auto; 
+    display: block; 
+    object-fit: cover; 
+    }
+    
+
+section.medlem {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: var(--tertiere-color);
+    padding: 3% 2%;
+    color: var(--primary-color);
+}
+
+section.nyhedsbrev {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #0073e6;
+    padding: 6% 2%;
+    color: var(--primary-color);
+}
+
+aside.bliv-medlem-heading {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+aside.medlems-fordele {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    line-height: 35px;
+}
+
+.medlem h2, .membership h3 {
     margin-bottom: 10px;
 }
 
-.category ul {
-    list-style: none;
-    margin-left: 15px;
+.medlem form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 300px;
+    margin: 10px auto; 
 }
 
-.category ul li {
-    margin-bottom: 5px;
+.medlem input[type="email"],
+.medlem input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
 }
 
-.recipes ul {
-    list-style-type: none;
-    margin-top: 10px;
+.medlem button {
+    padding: 10px;
+    background-color: #0073e6;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 16px;
 }
 
-.recipes ul li {
-    margin-bottom: 10px;
-    color: var(--text-color);
-}
+
+

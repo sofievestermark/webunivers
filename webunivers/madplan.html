@@ -13,20 +13,65 @@
 </head>
 
 <body>
-    <header class="header">
-        <a href="forside.html">
-            <img src="img/logo.png" alt="SOLO Logo" class="logo">
-    </a>
+   
 
+    <header class="header">
         <nav class="main-nav">
-            <ul>
-                <li><a href="opskrift.html">Opskrifter</a></li>
-                <li><a href="madplan.html">Madplan</a></li>
-                <li><a href="artikel.html">Solo tips</a></li>
-                <li><a href="#">Om</a></li>
-                <li><a href="#">Log På</a></li>
+    
+    
+            <input type="checkbox" id="menu-bar" style="display: none;">
+            <label for="menu-bar" class="logo">
+                <a href="forside.html"><img src="img/logo.png" alt="SOLO Logo"></a>
+            </label>
+            
+            <ul class="navbar">
+                <li><a href="opskrift.html">Opskrifter</a>
+                <ul class="dropdown">
+                    <li><a href="opskrift.html">Opskrifts generator - hvad har du i køleskabet?</a></li>
+                    <li><a href="opskrift.html">Budgetvenlige retter</a>
+                    <li><a href="opskrift.html">Sund aftensmad</a></li>
+                    <li><a href="opskrift.html">Hurtige retter</a></li>
+                    <li><a href="opskrift.html">Vegeratisk hverdag</a></li>
+                  
+                </ul>
+    
+                <li><a href="madplan.html">Madplan</a>
+                <ul class="dropdown">
+                    <li><a href="madplan.html">Solos bedste bud</a></li>
+                    <li><a href="madplan.html">Sund</a></li>
+                    <li><a href="madplan.html">Billig</a></li>
+                    <li><a href="madplan.html">Nem</a></li>
+                    <li><a href="madplan.html">Vegeratisk</a></li>
+                    
+                </ul>
+    
+                <li><a href="artikel.html">Solo tips</a>
+                    <ul class="dropdown">
+                        <li><a href="artikel.html">Blog</a></li>
+                        <li><a href="artikel.html">Ugens tilbud</a></li>
+                        <li><a href="artikel.html">Food galleri - bliv inspireret</a></li>
+                        
+                    </ul>
+    
+                <li><a href="#">Om os</a>
+                <ul class="dropdown">
+                    <li><a href="#">Hvem er vi?</a></li>
+                    <li><a href="#">UKontakt</a>
+                    </li>
+                </ul>
+    
+                <li>
+                    <a href="#">Log ind</a>
+                    <ul class="dropdown">
+                        <li><a href="#">Min Madplan</a></li>
+                        <li><a href="#">Min indkøbsliste</a>
+                        <li><a href="#">Tilbud nær mig</a></li>
+                        <li><a href="#">Gemt Inspiration</a>
+                        </li>
+                    </ul>
+                </li>
             </ul>
-        </nav>
+        </nav>   
     </header>
 
     <main class="banner">
@@ -107,7 +152,7 @@
     <div class="billede-sektion"> 
     <div class="sektion"> 
         <a href="opskrift.html">
-        <img class="billeder" src="img/tærteto.png" alt="Tærte med tomat og feta ">
+        <img class="billeder" src="img/tærteto.png" alt="Tærte med tomat og feta">
         <h3>Tærte med tomat og feta</h3>
         </a>
     </div>
