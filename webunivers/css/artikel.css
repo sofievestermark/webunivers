@@ -53,9 +53,9 @@ body {
     top: 24%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: var(--secundary-color); /* Adjust color for visibility */
+    color: var(--secundary-color); 
     text-align: center;
-    font-size: 2.5rem; /* Adjust as needed */
+    font-size: 2.5rem; 
     padding: 10px;
     border-radius: 8px;
 }
@@ -65,9 +65,9 @@ body {
     top: 33%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: var(--secundary-color); /* Adjust color for visibility */
+    color: var(--secundary-color); 
     text-align: center;
-    font-size: 1.7rem; /* Adjust as needed */
+    font-size: 1.7rem; 
     padding: 5px;
     border-radius: 8px;
 }
@@ -185,6 +185,6 @@ section.tekst {
 }
 
 .bunden a:hover {
-    color: rgb(9, 100, 185); /* Add a custom hover color */
+    color: rgb(9, 100, 185); 
 }
  

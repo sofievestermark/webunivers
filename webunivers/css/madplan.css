@@ -72,7 +72,7 @@ body {
 }
 
 .oversigt a:hover {
-    color: rgb(9, 100, 185); /* Add a custom hover color */
+    color: rgb(9, 100, 185); 
 }
 
 .indkoebsliste {
@@ -127,28 +127,16 @@ body {
     margin: 5%;
 }
 
-/* .billede-sektion {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(200px, 1fr)); 
-    gap: 20px;
-    padding: 20px;
-    padding-bottom: 10%;
-    max-width: 1000px; 
-    margin: 0 auto; 
-    background-color: var(--secundary-color);
-    color:var(--primary-color);
-    
-} */
 
-/* Wrapper for full-width background */
+/* jeg har lavet en billede-wrapper, fordi jeg havde problemer med at få baggrundsfarven til at udfylde hele siden */
 .billede-wrapper {
     background-color: var(--secundary-color);
-    width: 100%; /* Full page width for the background */
-    padding: 20px 0; /* Add padding if desired */
+    width: 100%; 
+    padding: 20px 0; 
     padding-top: 10%;
 }
 
-/* Centered grid with max-width */
+
 .billede-sektion {
     display: grid;
     grid-template-columns: repeat(3, minmax(200px, 1fr)); 
@@ -165,12 +153,12 @@ body {
 .sektion {
     padding: 15px;
     text-align: center;
-    border: 1px /* Add a border for clarity */
+    border: 1px 
     
 }
 
 .billeder:hover {
-    opacity: 0.8; /* Dim the image slightly */
+    opacity: 0.8; 
 }
 
 .billede-sektion a {
@@ -179,7 +167,7 @@ body {
 }
 
 .billede-sektion a:hover h3 {
-    color: rgb(9, 100, 185); /* Add a custom hover color */
+    color: rgb(9, 100, 185); 
 }
 
 .viskestykke {

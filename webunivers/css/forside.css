@@ -111,7 +111,7 @@ body {
 .sektion {
     padding: 15px;
     text-align: center;
-    border: 1px; /* Add a border for clarity */
+    border: 1px; 
 }
 
 .bunden img {
@@ -162,7 +162,7 @@ aside.medlems-fordele {
     flex-direction: column;
     gap: 10px;
     max-width: 300px;
-    margin: 10px auto; /* Centers form inside overlay text */
+    margin: 10px auto; 
 }
 
 .medlem input[type="email"],
