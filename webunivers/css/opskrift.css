@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 :root{
     --primary-font-family: 'bely display';
     --primary-color: #F3E1AC;
@@ -63,15 +64,15 @@ body {
     width: 35%;
     height: 10%;
     margin: 5%;
-    border: 20px solid lightblue; /* Adjust the border thickness and color */
-    border-radius: 8px; /* Optional: makes corners rounded */
+    border: 20px solid lightblue; 
+    border-radius: 8px; /*runder hjørner*/
 }
 
 .indgredienser {
-    position: absolute; /* Allows precise positioning */
-    top: 400px; /* Distance from the top of the page */
-    right: 450px; /* Distance from the right side of the page */
-    width: 300px; /* Set a width for the article */
+    position: absolute; 
+    top: 400px;
+    right: 450px; 
+    width: 300px; 
     padding: 10px;
     line-height: 300%;
     color: var(--tertiere-color);
@@ -98,7 +99,6 @@ font-size: 20px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     padding-bottom: 5%;
  }
-
 
  
  .næringsindhold {
@@ -131,8 +131,6 @@ font-size: 20px;
     max-width: 90%;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
-
-
 
 img {
     width: 100%;

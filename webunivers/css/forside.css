@@ -4,6 +4,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 :root{
     --primary-color: #F2E1AC;
     --secundary-color: #420A17;
@@ -42,8 +43,6 @@ body {
     text-decoration: none;
 }
 
-
-
 .velkommen {
     top: 65%; 
     left: 30%; 
@@ -53,22 +52,20 @@ body {
     font-weight: bold;
     text-align: center;
 }
-
+ 
+/*baggrundsbilleder, der fylder hele bredden på mit site.*/
 .banner {
-    background-image: url("../img/bannerudentekst.png"); /* Replace with the correct path */
-    background-size: cover; /* Ensures the image covers the entire width */
-    background-position: center; /* Centers the image */
-    background-repeat: no-repeat; /* Prevents tiling */
+    background-image: url("../img/bannerudentekst.png"); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
     width: 100vw;
-    height: 500px; /* Adjust height as needed */
+    height: 500px; 
     display: flex;
     align-items: center;
     justify-content: center;
-    position: relative; /* Place it in normal flow */
+    position: relative; 
 }
-
-
-
 
 
 .inspiration {
@@ -86,26 +83,29 @@ body {
 }
 
 .billeder:hover {
-    opacity: 0.8; /* Dim the image slightly */
+    opacity: 0.8; 
 }
 
+/*fjerner underline og lilla farve på mine links*/
 .billede-sektion a {
     text-decoration: none; 
     color: inherit;
 }
 
 .billede-sektion a:hover h3 {
-    color: rgb(9, 100, 185); /* Add a custom hover color */
+    color: rgb(9, 100, 185); 
 }
 
+
+/*opsætningen af mine billeder i grid*/
 .billede-sektion {
     display: grid;
-    grid-template-columns: repeat(3, minmax(200px, 1fr)); /* 3 columns */
+    grid-template-columns: repeat(3, minmax(200px, 1fr)); 
     gap: 20px;
     padding: 20px;
     padding-bottom: 20%;
-    max-width: 1000px; /* Control total width of grid */
-    margin: 0 auto; /* Center the grid on the page */
+    max-width: 1000px; 
+    margin: 0 auto; 
 }
 
 .sektion {
@@ -139,6 +139,7 @@ section.nyhedsbrev {
     padding: 6% 2%;
     color: var(--primary-color);
 }
+
 aside.bliv-medlem-heading {
     display: flex;
     flex-direction: row;
